@@ -17,10 +17,101 @@ popo
 <h1>画像をぶち込んでみる</h1>
 <img src="IMG/Teemo.jpg" alt="ティーモの画像">
 <br>元のサイズ
-<br><img src="IMG/Teemo.jpg" alt="ティーモの画像" width="303.75" height="179.25">
+<br>
+<img src="IMG/Teemo.jpg" alt="ティーモの画像" style="width: 25%">
 <br>1/4サイズ
 
-<p style="color:red; font-size:20px;"> これはHTMLとCSSを組み合わせて記述したテキストです。</p>
-<p>ティーモについては<a href=https://www.leagueoflegends.com/ja-jp/champions/teemo> こちら</a></p>
+<p style="color:red; font-size:20px;"> 
+    これはHTMLとCSSを組み合わせて記述したテキストです。</p>
+<p>ティーモについては
+    <a href=https://www.leagueoflegends.com/ja-jp/champions/teemo> こちら</a>
+</p>
 <p>ティーモについてはこちら↓↓↓↓↓↓↓
-<a href=https://www.leagueoflegends.com/ja-jp/champions/teemo> <br><img src="IMG/Teemo.jpg" alt="ティーモの画像" width="303.75" height="179.25"></a></p>
+<a href=https://www.leagueoflegends.com/ja-jp/champions/teemo> 
+    <br>
+    <img src="IMG/Teemo.jpg" alt="ティーモの画像" width="303.75" height="179.25">
+</a>
+</p>
+
+<p>参考画像をください</p>
+
+<style>
+    p.e {
+      color: #7cfc00;
+    }
+    p.e2 {
+        color:blueviolet;
+    }
+    code {
+      font-weight: bold;
+    }
+  </style>
+  
+  <p class="e">
+    This text will be green. Inline styles take precedence over CSS included
+    externally.
+  </p>
+  <p class="e2">
+    これで紫になる？
+  </p>
+
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Study</title>
+</head>
+<body>
+    <div class="box outer">
+        <div class="box inner1"></div>
+        <div class="box inner2"></div>
+        <div class="box inner3"></div>
+        <div class="box inner4"></div>
+        <div class="box inner5"></div>
+    </div>
+</body>
+<style>
+    .box {
+        border-radius: 5px;
+    }
+
+    .box.outer {
+        width: 400px;
+        height: 400px;
+        background-color: lightblue;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .box.inner1 {
+        width: 50px;
+        height: 50px;
+        background-color: #000;
+    }
+    .box.inner2 {
+        width: 50px;
+        height: 50px;
+        background-color: #00f;
+    }
+    .box.inner3 {
+        width: 50px;
+        height: 50px;
+        background-color: #90ee90;
+    }
+    .box.inner4 {
+        width: 50px;
+        height: 50px;
+        background-color: #ff8c00;
+    }
+    .box.inner5 {
+        width: 50px;
+        height: 50px;
+        background-color: #f0f;
+    }
+</style>
+</html>
